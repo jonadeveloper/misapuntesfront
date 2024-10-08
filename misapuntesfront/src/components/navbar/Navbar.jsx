@@ -1,5 +1,10 @@
 import { Link, Outlet } from "react-router-dom"
 import '../navbar/Navbar.css'
+import { FaInstagram } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+import { FaThreads } from "react-icons/fa6";
+
 
 export default function Navbar() {
   return (
@@ -8,11 +13,25 @@ export default function Navbar() {
       <Link to="/" className="linkDisabled">
         <h2>Mis Apuntes <span>Front</span></h2>
       </Link>
-      <nav>
+      <nav className="menu-navigator">
         <Link className="item" to="/">Inicio</Link>
-        <Link className="item" to="/about">About</Link>
         <Link className="item" to="/apuntes">Apuntes</Link>
+        <Link className="item" to="/sobre-mi">Sobre mi</Link>
         <Link className="item" to="/contactame">Contactame</Link>
+      </nav>
+      <nav className="social-menu">
+        <a className="item" href="https://instagram.com/jona.dev_ok" target="_blank">
+          <FaInstagram />
+        </a>
+        <a className="item" href="https://www.youtube.com/@jonadeveloper" target="_blank">
+          <FaYoutube />
+        </a>
+        <a className="item" href="https://github.com/jonadeveloper/" target="_blank">
+          <FaGithub />
+        </a>
+        <a className="item" href="https://www.threads.net/@jona.dev_ok" target="_blank">
+          <FaThreads />
+        </a>
       </nav>
     </header>
     <main role="main">
