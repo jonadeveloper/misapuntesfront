@@ -20,16 +20,16 @@ export default function Navbar() {
         <Link className="item" to="/contactame">Contactame</Link>
       </nav>
       <nav className="social-menu">
-        <a className="item" href="https://instagram.com/jona.dev_ok" target="_blank">
+        <a href="https://instagram.com/jona.dev_ok" target="_blank">
           <FaInstagram />
         </a>
-        <a className="item" href="https://www.youtube.com/@jonadeveloper" target="_blank">
+        <a href="https://www.youtube.com/@jonadeveloper" target="_blank">
           <FaYoutube />
         </a>
-        <a className="item" href="https://github.com/jonadeveloper/" target="_blank">
+        <a href="https://github.com/jonadeveloper/" target="_blank">
           <FaGithub />
         </a>
-        <a className="item" href="https://www.threads.net/@jona.dev_ok" target="_blank">
+        <a href="https://www.threads.net/@jona.dev_ok" target="_blank">
           <FaThreads />
         </a>
       </nav>
