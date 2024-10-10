@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom"
+import { Link} from "react-router-dom"
 import '../navbar/Navbar.css'
 import { FaInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
@@ -34,9 +34,6 @@ export default function Navbar() {
         </a>
       </nav>
     </header>
-    <main role="main">
-      <Outlet/>
-    </main>
     </>
   )
 }

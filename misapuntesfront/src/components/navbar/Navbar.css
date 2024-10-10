@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@100..900&display=swap');
 
 header{
     width: 100%;
@@ -11,15 +10,15 @@ header{
 }
 
 h2{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--font-family-logo);
     font-size: 1.5rem;
     letter-spacing: 0.125rem;
     text-transform: capitalize;
-    color: #000000;
+    color: var(--primary-color-font-logo);
 }
 
 span{
-    color: #065BF9;
+    color: var(--secondary-color-font-logo);
 }
 
 .menu-navigator{
@@ -35,30 +34,51 @@ span{
 }
 
 .social-menu a{
-    margin-left: 20px;
-    color: rgb(88, 87, 87);
+    margin-left: 1rem;
+    color: var(--primary-color-socialmedia);
     font-size: 1.25rem;
     text-decoration: none;
+}
+
+.social-menu a:hover{
+    color: var(--primary-color-socialmedia-hover);
+    animation: fadeOut 2s ease-in-out;
 }
 
 .linkDisabled{
     text-decoration: none;
 }
 
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.linkDisabled:hover{
+    animation: fadeOut 2s ease-out;
+}
+
 .item{
     width: max-content;
     padding:  0.25rem 0.375rem;
     border-radius: 0.4rem;
-    color: rgb(88, 87, 87);
+    color: var(--primary-color-menu-items-font);
     text-decoration: none;
-    font-family: "Inter", sans-serif;
+    font-family: var(--primary-font-menu-item);
     font-weight: 300;
     font-size: 1.25rem;
 }
 
 .item:hover{
-    background: rgb(88, 87, 87);
-    color: #ffffff;
+    background: var(--primary-color-menu-items-bg);
+    color: var(--primary-color-menu-items-font-hover);
     font-weight: 300;
     transition: ease-out 0.75s all;
 }

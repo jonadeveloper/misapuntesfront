@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    /* VARIABLES PARA EL HEADER */
+    /* -- logo o nombre --  */
+    --primary-color-font-logo: #000000;
+    --secondary-color-font-logo: #065BF9;
+    --font-family-logo: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* -- menu principal -- */
+    --primary-font-menu-item: "Inter", sans-serif;
+    --primary-color-menu-items-bg: #585757;
+    --secondary-color-menu-items-bg: #065BF9;
+    --primary-color-menu-items-font: #585757;
+    --primary-color-menu-items-font-hover: #ffffff;
+    --secondary-color-menu-items-font: #065BF9;
+    /* -- menu de redes sociales -- */
+    --primary-color-socialmedia: #000000;
+    --secondary-color-socialmedia: #ffffff;
+    --primary-color-socialmedia-hover: #7c7c7c;
+}
