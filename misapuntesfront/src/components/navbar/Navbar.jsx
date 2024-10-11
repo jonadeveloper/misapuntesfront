@@ -13,8 +13,8 @@ export default function Navbar() {
     <header>
       <Link to="/" className="linkDisabled">
       <div className="logo">
-        <img src={Logo} width={'75px'} height={'75px'} alt='Logo-mis-apuntes-front'/>
-        <h2>Mis Apuntes <span>Front</span></h2>
+        <img src={Logo} alt='Logo-mis-apuntes-front'/>
+        <h2>Mis Apuntes <span>Front</span></h2><span id='beta'> Beta </span>
       </div>
       </Link>
       <nav className="menu-navigator">
