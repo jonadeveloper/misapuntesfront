@@ -1,5 +1,6 @@
-import { Link} from "react-router-dom"
 import '../navbar/Navbar.css'
+import { Link} from "react-router-dom"
+import Logo from '../../assets/logo.svg';
 import { FaInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
@@ -11,7 +12,10 @@ export default function Navbar() {
     <>
     <header>
       <Link to="/" className="linkDisabled">
+      <div className="logo">
+        <img src={Logo} width={'75px'} height={'75px'} alt='Logo-mis-apuntes-front'/>
         <h2>Mis Apuntes <span>Front</span></h2>
+      </div>
       </Link>
       <nav className="menu-navigator">
         <Link className="item" to="/">Inicio</Link>
