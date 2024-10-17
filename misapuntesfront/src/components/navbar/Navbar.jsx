@@ -5,6 +5,8 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaThreads } from "react-icons/fa6";
+import { MdMenu } from "react-icons/md";
+
 
 
 export default function Navbar() {
@@ -22,6 +24,7 @@ export default function Navbar() {
         <Link className="item" to="/apuntes">Apuntes</Link>
         <Link className="item" to="/sobre-mi">Sobre mi</Link>
         <Link className="item" to="/contactame">Contactame</Link>
+        <MdMenu className='burgermenu' />
       </nav>
       <nav className="social-menu">
         <a href="https://instagram.com/jona.dev_ok" target="_blank">
