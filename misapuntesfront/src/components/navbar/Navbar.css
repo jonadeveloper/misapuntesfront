@@ -160,7 +160,7 @@
     
     .social-menu{
         width: fit-content;
-        display: none;
+        display: flex;
         justify-content:flex-end;
     }
     
